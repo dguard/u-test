@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Сравнение успеваемости групп</title>
+	<meta name="author" content="Александр Сердитов, РГППУ"/>
+	<link rel="icon" type="image/png" href="favicon.ico" />
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/index.css" rel="stylesheet">
+</head>
+<body>
+<div id="page">
+	<div id="header">
+		<div class="container">
+			Сравнение успеваемости групп
+		</div>
+	</div>
+
+	<div id="group-list" class="container">
+		<div class="group-list-wrap">
+			<div id="list" class="col">
+				<div class="list-inner">
+					<div class="desc column">
+						<div class="title">Статистика</div>
+						<div class="content">
+							<div class="ball block">
+								<div class="name">Балл</div>
+								<div class="max value">Максимальный</div>
+								<div class="avg value">Средний</div>
+								<div class="min value">Минимальный</div>
+							</div>
+							<div class="rank block">
+								<div class="name">Ранг</div>
+								<div class="max">Максимальный</div>
+								<div class="avg">Средний</div>
+								<div class="min">Минимальный</div>
+							</div>
+
+							<div class="count block">
+								<div class="name">Студенты</div>
+								<div class="max">Всего</div>
+								<!--<div class="done">Сдало</div>
+								<div class="fail">Не сдало</div>-->
+							</div>
+						</div>
+					</div>
+
+					<div id="group1" class="group column">
+						<div class="title">Группа1</div>
+						<div class="content">
+
+							<div class="ball block">
+								<div class="name">Балл</div>
+								<div class="max">?</div>
+								<div class="avg">?</div>
+								<div class="min">?</div>
+							</div>
+							<div class="rank block">
+								<div class="name">Ранг</div>
+								<div class="max">?</div>
+								<div class="avg">?</div>
+								<div class="min">?</div>
+							</div>
+
+							<div class="student block">
+								<div class="name">Студенты</div>
+								<div class="count">?</div>
+								<!--<div class="done">?</div>
+								<div class="fail">?</div>-->
+							</div>
+							<div class="btn-group dropup">
+								<a href="#modal" class="change-btn btn btn-success" role="button" data-toggle="modal">Изменить</a>
+							</div>
+						</div>
+					</div>
+					<div id="group2" class="group column">
+						<div class="title">Группа2</div>
+						<div class="content">
+
+							<div class="ball block">
+								<div class="name">Балл</div>
+								<div class="max">?</div>
+								<div class="avg">?</div>
+								<div class="min">?</div>
+							</div>
+							<div class="rank block">
+								<div class="name">Ранг</div>
+								<div class="max">?</div>
+								<div class="avg">?</div>
+								<div class="min">?</div>
+							</div>
+
+							<div class="student block">
+								<div class="name">Студенты</div>
+								<div class="count">?</div>
+								<!--<div class="done">?</div>
+								<div class="fail">?</div>-->
+							</div>
+							<div class="btn-group dropup">
+								<a href="#modal" class="change-btn btn btn-success" role="button" data-toggle="modal">Изменить</a>
+							</div>
+						</div>
+					</div>
+					<div style="clear: both"></div>
+					<div class="criteria-text">Введите данные для первой и второй групп. Для этого нажмите на кнопку изменить. После этого будет построена диаграмма.</div>
+				</div>
+			</div>
+			<div class="col chart-wrap">
+				<div id="chart"></div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal -->
+	<div id="modal" class="modal hide fade" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			<h3>Изменить данные</h3>
+		</div>
+		<div class="modal-body">
+			<p>Введите баллы студентов. <br>Каждое значение с новой строки.</p>
+			<form>
+				<textarea class="balls"></textarea>
+			</form>
+		</div>
+		<div class="modal-footer">
+			<button class="btn" data-dismiss="modal" aria-hidden="true">Отмена</button>
+			<button class="save-btn btn btn-primary" data-dismiss="modal" aria-hidden="true">Изменить</button>
+		</div>
+	</div>
+	<div id="footer">
+		<a href="https://github.com/dguard">© 2013 Alexander Serditov <br></a>
+	</div>
+</div>
+<script src="js/vendor/jquery.js"></script>
+<script src="js/vendor/highcharts.js"></script>
+<script src="js/vendor/exporting.js"></script>
+<script src="js/vendor/bootstrap-modal.js"></script>
+<script src="js/vendor/bootstrap-dropdown.js"></script>
+<script src="js/index.js"></script>
+
+
+</body>
+</html>
