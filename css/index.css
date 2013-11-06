@@ -70,6 +70,7 @@ body a:hover {
 }
 
 .modal-body {
+	position: relative;
 	color: #000;
 	height: 361px;
 }
@@ -203,6 +204,31 @@ body a:hover {
 	text-align: center;
 	line-height: 80px;
 }
+
+.errorMessage {
+	font-size: 14px;
+	background: #D45252;
+	border-radius: 3px;
+	color: #FFF !important;
+	margin: -22px -285px 0 8px;
+	padding: 6px;
+	z-index: 999;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	display: inline;
+	width: 240px;
+}
+
+.errorMessage:before {
+	content: "\25C0";
+	color: #D45252;
+	position: absolute;
+	top: 50%;
+	margin-top: -10px;
+	left: -6px;
+}
+
 
 @media only screen and (max-width: 1178px) {
 	.list-inner {

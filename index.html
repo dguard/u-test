@@ -105,8 +105,14 @@
 					<div class="criteria-text">Введите данные для первой и второй групп. Для этого нажмите на кнопку изменить. После этого будет построена диаграмма.</div>
 				</div>
 			</div>
-			<div class="col chart-wrap">
-				<div id="chart"></div>
+			<div class="col">
+				<div class="chart-wrap hide">
+					<div id="chart"></div>
+					<select class="chart-type">
+						<option selected value="balls">Баллы</option>
+						<option value="ranks">Ранги</option>
+					</select>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -125,8 +131,9 @@
 		</div>
 		<div class="modal-footer">
 			<button class="btn" data-dismiss="modal" aria-hidden="true">Отмена</button>
-			<button class="save-btn btn btn-primary" data-dismiss="modal" aria-hidden="true">Изменить</button>
+			<button class="save-btn btn btn-primary">Изменить</button>
 		</div>
+		<div class="errorMessage" style="display: none"></div>
 	</div>
 	<div id="footer">
 		<a href="https://github.com/dguard">© 2013 Alexander Serditov <br></a>
